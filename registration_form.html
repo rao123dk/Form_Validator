@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+ <title>Registration form  </title>
+ <style>
+ 
+ abbr{
+ color:red;
+ 
+ }
+ span{
+ color:red;
+ }
+ 
+ </style>
+</head>
+<body>
+
+<form class="dheeraj-form-validator" method="post" > 
+<div >
+	<label >First Name:<abbr title="This field is required">*</abbr></label><br/>
+	<input  type="text"  class="field-required" name="fname"  >
+	<span ></span>
+</div>
+
+<div >
+	<label >Last Name:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="text"  class="field-required" name="lname">
+	<span ></span>
+</div>
+
+
+<div >
+	<label >Password:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="password"  class="field-required" name="password">
+	<span ></span>
+</div>
+
+<div >
+	<label >URL(Optional):</label><br/>
+	<input  type="text" id="user_url" class="field-url" name="lname">
+	<span ></span>
+</div>
+
+<div>
+	<label>Primary Email:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="text"   class="field-email field-required" name="email">
+	<span ></span>	
+</div>
+<div>
+	<label>Secondary Email:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="text"  class="field-email field-required" name="email">
+	<span></span>		
+</div>
+						
+
+<div >
+	<label>Mobile No:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="text"  class="field-mobile field-required" name="mobile_no">
+	<span></span>								
+</div>
+
+
+<div>
+  <label>Degree:<abbr title="This field is required">*</abbr></label><br/>
+  <input type="checkbox" class="field-checkbox " name="degree" >UG <span></span><br/>
+  <input type="checkbox"class="field-checkbox" name="degree"  >PG<span></span>
+  
+</div>
+
+<div>
+   <label>Gender:<abbr title="This field is required">*</abbr></label><br/>
+   <input type="radio" class="field-required"   name="gender" checked> Male<span></span><br>
+   <input type="radio"  class="field-required" name="gender"  > Female<span></span><br>
+   
+</div>
+
+
+  
+<div>
+	<label>City:<abbr title="This field is required">*</abbr></label><br/>
+	<input type="text" class="field-required" name="Cities" list="Cities" value=""><span></span>
+	<datalist id="Cities">
+	  <select name="Cities" value="">
+	  <option value="Delhi">Delhi</option>
+	  <option value="Gurgaon">Gurgaon</option>
+	  <option value="Noida">Noida</option>
+	  <option value="Chandigarh">Chandigarh</option>
+	  <option value="Bengaluru">Bengaluru</option>
+	  <option value="Mumbai">Mumbai</option>
+	  <option value="Patna">Patna</option>
+	  <option value="Lucknow">Lucknow</option>
+	  <option value="hyderabad">hyderabad</option>
+	   </select>
+    </datalist>
+	
+</div>
+
+
+<div >
+	<label>Feedback:<abbr title="This field is required">*</abbr></label><br/>
+	<textarea   id ="user_feedback"  name="feedback"> </textarea>
+	<span></span>								
+</div>
+						
+
+    <br/><button type="submit" id="submit_form" value="submit">Submit</button> 
+</form>
+
+<script type="text/javascript" src="dheeraj_validation.js">
+</script>
+
+
+</body>
+</html>
+
